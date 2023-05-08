@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+<nav>
+    <br>
+    <br>
+    <div class="container is-vcentered">
+        <title>
+            Subreddit Surfer
+        </title>
+        <div class="container has-text-centered is-size-1 has-text-weight-bold">Subreddit Surfer</div>
+        <h1 class="has-text-centered is-italic">Due to poor naming conventions for many subreddits, it can be a hassle finding the correct subreddit for specific topics. For example if you are searching for the Arsenal FC subreddit,
+            you would likely search 'Arsenal' in reddit's search bar. This would direct you to the subreddit r/ArsenalFC with 77k members instead of what many would consider the 'correct' subreddit: r/Gunners.<br><br>
+            This is a simple Flask Web Application to ensure users are finding desired subreddits without hassle.
+        </h1>
+
+    </div>
+</nav>
+
+<br>
+<br>
+<div class="container is-vcentered">
+    <div class="box has-text-centered is-2" id="searchbox">
+        <form action="http://localhost:5000/loading" class="searching" method="POST">
+            <div>
+                <div class="level-item" id="search-bars">
+                    <input class="input" type="text" placeholder="Subreddit:", name="job_search">&nbsp&nbsp
+                    <button type="submit" class="button is-center is-small">Submit</button>
+        </form>
+        </div></div>
+{% endblock %}
+
+
